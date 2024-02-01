@@ -3,13 +3,13 @@ def check_character(word, index):
    if 0 < index < len(word):
       index_character = word[index]
    if index_character.isalpha():
-      return print("letter")
+      return "letter"
    if index_character.isspace():
-      return print("white space")
+      return "white space"
    if index_character.isdigit():
-      return print("digit")
+      return "digit"
    else:
-      return print("unknown")
+      return "unknown"
 
 if __name__ == '__main__': 
     print(check_character('happy birthday', 2))
